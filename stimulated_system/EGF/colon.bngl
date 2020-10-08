@@ -1,0 +1,217 @@
+# Tissue: Colon
+# D: EGFR+ERBB2 receptors 
+
+begin parameters
+	Kd_ED = 10^3 # 10^2,10^3,10^4 nM = 0.1,1,10 uM
+end parameters
+
+begin seed species
+  	R 281.73564216 # 90% PanRas
+	D 32.95188
+	
+	E1 25.75914803394507
+	E2 2.081141374079728
+	E3 5.567184226741365
+	E4 0.5678153859598846
+	E5 3.912689121728408
+	E6 0.6948145315864912
+	E7 0.8964640069630603
+	E8 2.817858072821226
+	E9 0.01132449609084075
+	E10 9.067433983613418
+	E11 6.640651615288905
+	E12 10.0523171362327
+	E13 5.180783944734971
+	E14 2.08385963668444
+	E15 0.0
+	E16 33.66599533671982
+	E17 0.2353126031974269
+	E18 1.246110745620388
+	E19 26.96092452204027
+	E20 1.899035809865921
+	E21 49.98200874522002
+	E22 0.01624270088923149
+	E23 0.7139278155093448
+	E24 1.312059649833793
+	E25 12.4073302414929
+	E26 0.8902149680803678
+	E27 0.5001546797942958
+	E28 1.708654283838417
+	E29 0.9608477567198023
+	E30 0.0
+	E31 6.424951520547451
+	E32 0.09288438884323438
+	E33 7.043264392736465
+	E34 5.797624888019055
+	E35 0.4784383500876868
+	E36 2.536903546456509
+	E37 1.500464216589015
+	E38 0.0
+	E39 2.36550223987588
+	E40 0.04189328328311358
+	E41 0.7202869604420044
+	E42 8.128420091019505
+	E43 1.521056862609328
+	E44 1.187298799819728
+	E45 12.90129769056032
+	E46 0.06157348577662446
+	E47 2.196619577006127
+	E48 4.050622494815032
+	E49 0.2234647809594204
+	E50 13.99473953882335
+	E51 0.8402326753340668
+	E52 0.5380731574635378
+	E53 1.402517886316963
+	E54 1.960835760136437
+	E55 0.7763813675774617
+	E56 0.06826855513846604
+end seed species
+
+begin observables
+	Molecules RE1 RE1()
+	Molecules RE2 RE2()
+	Molecules RE3 RE3()
+	Molecules RE5 RE5()
+	Molecules RE4 RE4()
+	Molecules RE6 RE6()
+	Molecules RE7 RE7()
+	Molecules RE8 RE8()
+	Molecules RE9 RE9()
+	Molecules RE10 RE10()
+	Molecules RE11 RE11()
+	Molecules RE12 RE12()
+	Molecules RE13 RE13()
+	Molecules RE14 RE14()
+	Molecules RE15 RE15()
+	Molecules RE16 RE16()
+	Molecules RE17 RE17()
+	Molecules RE18 RE18()
+	Molecules RE19 RE19()
+	Molecules RE20 RE20()
+	Molecules RE21 RE21()
+	Molecules RE22 RE22()
+	Molecules RE23 RE23()
+	Molecules RE24 RE24()
+	Molecules RE25 RE25()
+	Molecules RE26 RE26()
+	Molecules RE27 RE27()
+	Molecules RE28 RE28()
+	Molecules RE29 RE29()
+	Molecules RE30 RE30()
+	Molecules RE31 RE31()
+	Molecules RE32 RE32()
+	Molecules RE33 RE33()
+	Molecules RE34 RE34()
+	Molecules RE35 RE35()
+	Molecules RE36 RE36()
+	Molecules RE37 RE37()
+	Molecules RE38 RE38()
+	Molecules RE39 RE39()
+	Molecules RE40 RE40()
+	Molecules RE41 RE41()
+	Molecules RE42 RE42()
+	Molecules RE43 RE43()
+	Molecules RE44 RE44()
+	Molecules RE45 RE45()
+	Molecules RE46 RE46()
+	Molecules RE47 RE47()
+	Molecules RE48 RE48()
+	Molecules RE49 RE49()
+	Molecules RE50 RE50()
+	Molecules RE51 RE51()
+	Molecules RE52 RE52()
+	Molecules RE53 RE53()
+	Molecules RE54 RE54()
+	Molecules RE55 RE55()
+	Molecules RE56 RE56()
+	
+	Molecules RED18 RED18()
+	Molecules RED19 RED19()
+	Molecules RED20 RED20()
+	Molecules RED54 RED54()
+	Molecules RED55 RED55()
+	Molecules RED56 RED56()
+end observables
+
+begin reaction rules
+	R() + E1() <-> RE1() 1, 70.0
+	R() + E2() <-> RE2() 1, 40.0
+	R() + E3() <-> RE3() 1, 80.0
+	R() + E4() <-> RE4() 1, 10000
+	R() + E5() <-> RE5() 1, 5000
+	R() + E6() <-> RE6() 1, 7500.0
+	R() + E7() <-> RE7() 1, 2900.0
+	R() + E8() <-> RE8() 1, 10000
+	R() + E9() <-> RE9() 1, 10000
+	R() + E10() <-> RE10() 1, 39000
+	R() + E11() <-> RE11() 1, 1000
+	R() + E12() <-> RE12() 1, 3500.0
+	R() + E13() <-> RE13() 1, 90.0
+	R() + E14() <-> RE14() 1, 39000
+	R() + E15() <-> RE15() 1, 39000
+	R() + E16() <-> RE16() 1, 3030.0
+	R() + E17() <-> RE17() 1, 820.0
+	R() + E18() <-> RE18() 1, 880.0
+	R() + E19() <-> RE19() 1, 11000
+	R() + E20() <-> RE20() 1, 5000
+	R() + E21() <-> RE21() 1, 10000
+	R() + E22() <-> RE22() 1, 39000
+	R() + E23() <-> RE23() 1, 5000
+	R() + E24() <-> RE24() 1, 39000
+	R() + E25() <-> RE25() 1, 7500.0
+	R() + E26() <-> RE26() 1, 20000
+	R() + E27() <-> RE27() 1, 5000
+	R() + E28() <-> RE28() 1, 10000
+	R() + E29() <-> RE29() 1, 39000
+	R() + E30() <-> RE30() 1, 10000
+	R() + E31() <-> RE31() 1, 39000
+	R() + E32() <-> RE32() 1, 39000
+	R() + E33() <-> RE33() 1, 39000
+	R() + E34() <-> RE34() 1, 210.0
+	R() + E35() <-> RE35() 1, 39000
+	R() + E36() <-> RE36() 1, 10000
+	R() + E37() <-> RE37() 1, 10000
+	R() + E38() <-> RE38() 1, 10000
+	R() + E39() <-> RE39() 1, 33000
+	R() + E40() <-> RE40() 1, 50000
+	R() + E41() <-> RE41() 1, 10000
+	R() + E42() <-> RE42() 1, 50000
+	R() + E43() <-> RE43() 1, 5000
+	R() + E44() <-> RE44() 1, 33000
+	R() + E45() <-> RE45() 1, 50000
+	R() + E46() <-> RE46() 1, 7500.0
+	R() + E47() <-> RE47() 1, 10000
+	R() + E48() <-> RE48() 1, 5000
+	R() + E49() <-> RE49() 1, 7500.0
+	R() + E50() <-> RE50() 1, 50000
+	R() + E51() <-> RE51() 1, 10000
+	R() + E52() <-> RE52() 1, 5000
+	R() + E53() <-> RE53() 1, 14000
+	R() + E54() <-> RE54() 1, 5000
+	R() + E55() <-> RE55() 1, 5000
+	R() + E56() <-> RE56() 1, 3600.0
+	
+	E18() + D() <-> ED18() 1, Kd_ED
+	E19() + D() <-> ED19() 1, Kd_ED
+	E20() + D() <-> ED20() 1, Kd_ED
+	E54() + D() <-> ED54() 1, Kd_ED
+	E55() + D() <-> ED55() 1, Kd_ED
+	E56() + D() <-> ED56() 1, Kd_ED
+
+	RE18() + D() <-> RED18() 1, Kd_ED/100
+	RE19() + D() <-> RED19() 1, Kd_ED/100
+	RE20() + D() <-> RED20() 1, Kd_ED/100
+	RE54() + D() <-> RED54() 1, Kd_ED/100
+	RE55() + D() <-> RED55() 1, Kd_ED/100
+	RE56() + D() <-> RED56() 1, Kd_ED/100
+	
+	ED18() + R() <-> RED18() 1, 8.80
+	ED19() + R() <-> RED19() 1, 110.0
+	ED20() + R() <-> RED20() 1, 50.0
+	ED54() + R() <-> RED54() 1, 50.0
+	ED55() + R() <-> RED55() 1, 50.0
+	ED56() + R() <-> RED56() 1, 36.0
+	
+end reaction rules
+
+simulate({method=>"ode",t_end=>10,n_steps=>100})
