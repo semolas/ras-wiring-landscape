@@ -87,7 +87,7 @@ def main(GTP=.2, MUT=False):
 
     print(f'GTP load of HRAS, KRAS, NRAS: {ras}')
 
-    f = 'C:/Users/simo_/input_data_SCatozzi.xlsx'
+    f = 'C:/Users/simo_/input_data_ras_56effectors.xlsx'
     wb = pd.ExcelFile(f)  # load workbook
     ws = wb.sheet_names  # worksheet list
     dg = wb.parse(sheet_name=ws[0], header=0, index_col=None, usecols=None)
